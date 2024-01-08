@@ -3,11 +3,10 @@ Pod::Spec.new do |spec|
     spec.version                  = '1.0'
     spec.homepage                 = 'https://github.com/Mbarek-Yz/TestLib2024'
     spec.source                   = { :git=> 'https://github.com/Mbarek-Yz/Lib2024.git'}
- 
     spec.authors                  = ''
     spec.license                  = { :type => 'MIT', :file => 'LICENSE.txt' }
     spec.summary                  = 'Some description for the Shared Module'
-    spec.vendored_frameworks      = 'build/cocoapods/framework/TestLib2024.framework'
+    spec.vendored_frameworks      = 'build/cocoapods/framework/source.framework'
     spec.libraries                = 'c++'
     spec.ios.deployment_target = '15.0'
                 
