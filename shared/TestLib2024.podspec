@@ -2,7 +2,7 @@ Pod::Spec.new do |spec|
     spec.name                     = 'TestLib2024'
     spec.version                  = '1.0'
     spec.homepage                 = 'https://github.com/Mbarek-Yz/TestLib2024'
-    spec.source                   = { :git=> 'https://github.com/Mbarek-Yz/Lib2024.git'}
+    spec.source                   = { :git=> 'https://github.com/Mbarek-Yz/TestLib2024.git'}
     spec.authors                  = ''
     spec.license                  = { :type => 'MIT', :file => 'LICENSE.txt' }
     spec.summary                  = 'Some description for the Shared Module'
