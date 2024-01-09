@@ -2,6 +2,8 @@ plugins {
     alias(libs.plugins.kotlinMultiplatform)
     alias(libs.plugins.kotlinCocoapods)
     alias(libs.plugins.androidLibrary)
+    id("maven-publish")
+    id("signing")
 }
 
 kotlin {
@@ -43,4 +45,28 @@ android {
     defaultConfig {
         minSdk = 34
     }
+}
+
+publishing {
+    publications {
+        create<MavenPublication>("maven") {
+            from(components["kotlin"])
+            groupId = "com.example" // Replace with your group ID
+            artifactId = "your-library" // Replace with your artifact ID
+            version = "1.0.0" // Replace with your version
+
+            pom {
+                // Maven POM configuration...
+            }
+        }
+    }
+
+    repositories {
+        mavenCentral()
+        // Other repositories...
+    }
+}
+
+signing {
+    useGpgCmd()
 }
